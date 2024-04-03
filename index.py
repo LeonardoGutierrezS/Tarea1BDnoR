@@ -68,7 +68,7 @@ while True:
         rut = int(input("Rut sin digito verificador del cliente a actualizar: "))
         nuevo_nombre= input("Nuevo nombre: ")
         nueva_direccion= input("Nueva dirección: ")
-         opcion = int(input("Nuevo producto contratado: \n1. Plan de internet\n2. Plan de telefonía\n3. Plan de televisión\n4. Plan de internet + telefonía\n5. Plan de internet + televisión\n6. Plan de telefonía + televisión\n7. Plan de internet + telefonía + televisión\nElige una opción: "))
+        opcion = int(input("Nuevo producto contratado: \n1. Plan de internet\n2. Plan de telefonía\n3. Plan de televisión\n4. Plan de internet + telefonía\n5. Plan de internet + televisión\n6. Plan de telefonía + televisión\n7. Plan de internet + telefonía + televisión\nElige una opción: "))
         if opcion==1:
             productoContratado = "Plan de internet"
         elif opcion==2:
