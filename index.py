@@ -33,7 +33,21 @@ while True:
         rut = int(input("Rut sin digito verificador: "))
         nombre= input("Nombre: ")
         direccion= input("Dirección: ")
-        productoContratado = input("Producto contratado: ")
+        opcion = int(input("Producto contratado: \n1. Plan de internet\n2. Plan de telefonía\n3. Plan de televisión\n4. Plan de internet + telefonía\n5. Plan de internet + televisión\n6. Plan de telefonía + televisión\n7. Plan de internet + telefonía + televisión\nElige una opción: "))
+        if opcion==1:
+            productoContratado = "Plan de internet"
+        elif opcion==2:
+            productoContratado = "Plan de telefonía"
+        elif opcion==3:
+            productoContratado = "Plan de televisión"
+        elif opcion==4:
+            productoContratado = "Plan de internet + telefonía"
+        elif opcion==5:
+            productoContratado = "Plan de internet + televisión"
+        elif opcion==6:
+            productoContratado = "Plan de telefonía + televisión"
+        elif opcion==7:
+            productoContratado = "Plan de internet + telefonía + televisión"
         nuevo_documento={
         "rut": rut,
         "nombre": nombre,
@@ -54,7 +68,21 @@ while True:
         rut = int(input("Rut sin digito verificador del cliente a actualizar: "))
         nuevo_nombre= input("Nuevo nombre: ")
         nueva_direccion= input("Nueva dirección: ")
-        nuevo_productoContratado = input("Nuevo producto contratado: ")
+         opcion = int(input("Nuevo producto contratado: \n1. Plan de internet\n2. Plan de telefonía\n3. Plan de televisión\n4. Plan de internet + telefonía\n5. Plan de internet + televisión\n6. Plan de telefonía + televisión\n7. Plan de internet + telefonía + televisión\nElige una opción: "))
+        if opcion==1:
+            productoContratado = "Plan de internet"
+        elif opcion==2:
+            productoContratado = "Plan de telefonía"
+        elif opcion==3:
+            productoContratado = "Plan de televisión"
+        elif opcion==4:
+            productoContratado = "Plan de internet + telefonía"
+        elif opcion==5:
+            productoContratado = "Plan de internet + televisión"
+        elif opcion==6:
+            productoContratado = "Plan de telefonía + televisión"
+        elif opcion==7:
+            productoContratado = "Plan de internet + telefonía + televisión"
         MiColeccion.update_one({"rut": rut}, {"$set": {"nombre": nuevo_nombre, "direccion": nueva_direccion, "productoContratado": nuevo_productoContratado}})
         print("Documento actualizado")
 
